@@ -1,0 +1,130 @@
+1] Your task is to make two functions(max and min or maximum and minimum depending on the languge)
+   that recive a list of integers as input and return the largest and lowest number in that list,respectively.
+   input:[45,333,76,29,900,23,474,654,29,454]
+
+    output:min:->23
+    max:->900
+
+---->  pubic class program1{
+       public static void main(String[]args){
+         int a[]={45,333,76,29,900,23,474,654,29,454};
+         int temp;
+           for (int i =0; i<a.length;j++){
+             for(int j =i+1; j<a.length;j++){
+                 if(a[i]>a[j]){
+                   temp=a[i];
+                   a[i]=a[i];
+                   a[j]=atemp;
+                }
+          }
+     }
+         System.out.println("max num"+"  "+a[a.length-1]);
+         System.out.println("min num"+"  "+a[0]);
+      }
+  }
+
+
+
+2] Timmy & Sarah think they are in love,but around where they live,they will only know onece
+   they pick a flower each.if one of the flowers has an even number of petals and the other has an odd number
+   of petals it means they are in love.
+
+   write a function that will take the number of petals of each flower and return
+   if they are in love and false if they aren't.
+
+----> public class program2 {
+       public static void main(String[]args){
+          int petalNum;
+          Scanner sc=new Scanner(System.in);
+          int petalNumber=sc.nextInt();
+
+            if(petalNumber %2==0){
+               System.out.println("Both are in love");
+           }
+             else{
+            System.out.println("Both are not in love");
+          }
+    }
+}
+
+
+3] What are the generalized and specialized classes in java?
+---> generalization: these are refered as superclass
+                      subclasses can aqured a properties by superclasses inplicitely
+
+     specialization:  these are refered as subclass
+                      subclsses can aqured a properties by superclasses explicitely
+
+
+4] a) don't want my class to be inherited by any other class.What should i do?
+---> make my  super class methods as private,this class and methods should not be inherite by other class.
+
+   b) Can you give a few examples of final classes defined in java API?
+   c) What are some alternatives to inheritance?
+
+
+5] Which Sorted collection have you used?
+--->  This comes very late,but there is a class in the JDK just for purpose of having a sorted list.
+       It is named( somewhat out of order with the other sorted*interfaces) "java.util.priorityQueue"
+       It can sorteither Comparable <?>s or using a comparator.
+
+
+6] what is the difference between LinkedList nd ArrayList in java?
+---> ArrayList: internally call array 
+                arrayList contain listIterator
+                reading operation is easy
+                writing operation is slow or difficult.
+
+    LinkedList: internally call node
+                reading operation is slow
+                writing operation is easy
+
+7] What is the difference between ListIterator and iterator in java?
+
+----> Iterator: it  is used to access the element forward direction
+                it is avilable in collection
+
+      ListIterator: it is used to access the element both in forward and backward irection
+                    it is special type avilable in listerator
+
+8] What is the covariant method overriding in java?
+9] What is memory leakage i java?
+10] Explain static polymophism an dynamic polymorphism?
+
+---->   static polymorphism:  refered as completime polymorphism
+                              achived by method overloading
+                              method overloading means declaration of method more than once with a same within a  same class  but diffrent in parameterlist.
+
+        dynamic polymorphism: refered as runtime polymorphism
+                              achived by method overloading
+                              method overriding means method signature must be same but diffrent in implimentaion.
+
+
+11] Hema created a class called personallnformation and she want to give security for the properties how can she achive.
+
+----> hema make a class personal information variable or proparte by private using encapsulation we can achive the security.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
